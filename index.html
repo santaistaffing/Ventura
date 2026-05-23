@@ -332,6 +332,13 @@
       width: 64px; height: 64px; border-radius: 50%; object-fit: cover;
       border: 3px solid var(--ice); flex-shrink: 0;
     }
+    .tcard-initial {
+      width: 64px; height: 64px; border-radius: 50%; flex-shrink: 0;
+      border: 3px solid var(--ice);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.3rem;
+      color: var(--white); letter-spacing: -0.02em;
+    }
     .tcard-name  { font-family:'Outfit',sans-serif; font-weight:700; font-size:1rem; color:var(--navy); text-align:center; }
     .tcard-role  { font-size:0.75rem; color:var(--sky); font-weight:600; letter-spacing:0.05em; text-transform:uppercase; margin-top:4px; text-align:center; }
     .tcard-quote { font-size:0.875rem; color:var(--muted); line-height:1.7; text-align:center; }
@@ -921,7 +928,7 @@
       <div class="tcard-stack-wrap" id="tstack">
 
         <div class="tcard" data-pos="0" data-index="0">
-          <img class="tcard-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Directora Lukademy" />
+          <div class="tcard-initial" style="background:linear-gradient(135deg,#2D5EA3,#6AAFD4);">BM</div>
           <div>
             <div class="tcard-stars">★★★★★</div>
             <div class="tcard-name">Brenda Muñoz</div>
@@ -931,7 +938,7 @@
         </div>
 
         <div class="tcard" data-pos="1" data-index="1">
-          <img class="tcard-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Gerente Buggy" />
+          <div class="tcard-initial" style="background:linear-gradient(135deg,#1A3868,#2D5EA3);">PG</div>
           <div>
             <div class="tcard-stars">★★★★★</div>
             <div class="tcard-name">Pier Gallardo</div>
@@ -941,7 +948,7 @@
         </div>
 
         <div class="tcard" data-pos="2" data-index="2">
-          <img class="tcard-avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Fundadora Vergent" />
+          <div class="tcard-initial" style="background:linear-gradient(135deg,#6AAFD4,#A8D8F0);color:#1A3868;">MT</div>
           <div>
             <div class="tcard-stars">★★★★★</div>
             <div class="tcard-name">Maricielo Tantalean</div>
@@ -951,7 +958,7 @@
         </div>
 
         <div class="tcard" data-pos="3" data-index="3">
-          <img class="tcard-avatar" src="https://randomuser.me/api/portraits/men/52.jpg" alt="Dr. Oscar Rodriguez" />
+          <div class="tcard-initial" style="background:linear-gradient(135deg,#1A3868,#6AAFD4);">OR</div>
           <div>
             <div class="tcard-stars">★★★★★</div>
             <div class="tcard-name">Dr. Oscar Rodriguez</div>
@@ -961,7 +968,7 @@
         </div>
 
         <div class="tcard" data-pos="4" data-index="4">
-          <img class="tcard-avatar" src="https://randomuser.me/api/portraits/women/29.jpg" alt="Yuliana Juaregui" />
+          <div class="tcard-initial" style="background:linear-gradient(135deg,#2D5EA3,#1A3868);">YJ</div>
           <div>
             <div class="tcard-stars">★★★★★</div>
             <div class="tcard-name">Yuliana Juaregui</div>
@@ -999,7 +1006,7 @@
 <section id="planes">
   <div class="container">
     <div class="section-header">
-      <span class="label reveal">Planes y precios</span>
+      <span class="label reveal">Planes</span>
       <h2 class="headline reveal reveal-delay-1">Elige el nivel de<br>automatización ideal.</h2>
       <p class="subhead reveal reveal-delay-2">Sin contratos eternos ni letra pequeña. Planes claros diseñados para escalar con tu negocio.</p>
     </div>
@@ -1009,12 +1016,6 @@
       <div class="price-card reveal">
         <div class="plan-name">Plan Starter</div>
         <div class="plan-desc">Ideal para negocios que quieren dar sus primeros pasos en automatización de atención.</div>
-        <div class="plan-price">
-          <div style="font-size:0.78rem;color:var(--muted);margin-bottom:6px;">(Los precios no incluyen IGV)</div>
-          <span class="price-amount">$99</span><span class="price-period">/mes</span>
-          <div class="price-setup">+ $400 configuración inicial</div>
-          <div style="font-size:0.75rem;color:var(--muted);margin-top:6px;line-height:1.4;">(El pago de configuración es único y puede variar según los requerimientos específicos del negocio.)</div>
-        </div>
         <div class="plan-divider"></div>
         <ul class="plan-features">
           <li><span class="check check-blue"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Integración de CRM con WhatsApp.</li>
@@ -1022,7 +1023,7 @@
           <li><span class="check check-blue"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Embudo básico predefinido.</li>
           <li><span class="check check-blue"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Hasta 30 páginas para base de datos.</li>
           <li><span class="check check-blue"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Costos de Tokens y servidor incluidos.</li>
-          <li><span class="check check-blue"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Manejo de hasta 250 Conversaciones activas mensuales.</li>
+          <li><span class="check check-blue"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Manejo de hasta 300 Conversaciones activas mensuales.</li>
         </ul>
         <a href="https://wa.me/51997487230?text=Hola%2C%20me%20interesa%20el%20Plan%20Starter%20de%20Ventura" class="btn btn-outline plan-cta" target="_blank" rel="noopener">Empezar →</a>
       </div>
@@ -1032,12 +1033,6 @@
         <div class="popular-badge">Más Popular</div>
         <div class="plan-name white">Plan Básico</div>
         <div class="plan-desc">Para negocios que quieren automatizar su atención y captación de leads con mayor capacidad.</div>
-        <div class="plan-price">
-          <div style="font-size:0.78rem;color:rgba(255,255,255,0.7);margin-bottom:6px;">(Los precios no incluyen IGV)</div>
-          <span class="price-amount white">$199</span><span class="price-period">/mes</span>
-          <div class="price-setup">+ $700 configuración inicial</div>
-          <div style="font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:6px;line-height:1.4;">(El pago de configuración es único y puede variar según los requerimientos específicos del negocio.)</div>
-        </div>
         <div class="plan-divider"></div>
         <ul class="plan-features">
           <li><span class="check-white"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Integración de CRM con WhatsApp.</li>
@@ -1055,12 +1050,6 @@
       <div class="price-card elite-card reveal reveal-delay-2">
         <div class="plan-name" style="color:var(--ice)">Plan Pro</div>
         <div class="plan-desc" style="color:rgba(255,255,255,0.6)">La solución completa para empresas que quieren automatizar ventas, atención y operaciones.</div>
-        <div class="plan-price">
-          <div style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-bottom:6px;">(Los precios no incluyen IGV)</div>
-          <span style="font-family:'Outfit',sans-serif;font-weight:800;font-size:3rem;letter-spacing:-0.03em;color:var(--ice);">$299</span><span class="price-period" style="color:rgba(255,255,255,0.6);">/mes</span>
-          <div class="price-setup" style="color:rgba(255,255,255,0.5);margin-top:4px;">+ $1,000 configuración inicial</div>
-          <div style="font-size:0.75rem;color:rgba(255,255,255,0.45);margin-top:6px;line-height:1.4;">(El pago de configuración es único y puede variar según los requerimientos específicos del negocio.)</div>
-        </div>
         <div class="plan-divider"></div>
         <ul class="plan-features">
           <li><span class="check-navy"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Integración de CRM con WhatsApp, Instagram, Facebook y TikTok (según compatibilidad del CRM).</li>
@@ -1090,55 +1079,41 @@
       <div class="addon-card reveal">
         <div class="addon-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
         <div class="addon-name">+500 conversaciones</div>
-        <div class="addon-price">$49 / mes</div>
         <div class="addon-note">Amplía tu capacidad de atención cuando crece la demanda.</div>
       </div>
       <div class="addon-card reveal reveal-delay-1">
         <div class="addon-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="14" y2="13"/></svg></div>
         <div class="addon-name">+1,000 conversaciones</div>
-        <div class="addon-price">$79 / mes</div>
         <div class="addon-note">Para temporadas altas o negocios de alto volumen.</div>
       </div>
       <div class="addon-card reveal reveal-delay-2">
         <div class="addon-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg></div>
         <div class="addon-name">Facturación automática</div>
-        <div class="addon-price">$299 config.</div>
-        <div class="addon-note">+ costo mensual según volumen. Boletas y facturas emitidas sin intervención.</div>
+        <div class="addon-note">Boletas y facturas emitidas sin intervención.</div>
       </div>
       <div class="addon-card reveal reveal-delay-3">
         <div class="addon-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
         <div class="addon-name">Reporte de ingresos diarios</div>
-        <div class="addon-price">$250 config. + $29/mes</div>
         <div class="addon-note">Análisis y reportes de ingresos enviados automáticamente cada día.</div>
       </div>
       <div class="addon-card reveal">
         <div class="addon-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.06-.97a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
         <div class="addon-name">Llamadas automáticas con IA</div>
-        <div class="addon-price">$499 config.</div>
-        <div class="addon-note">+ mensualidad según volumen. Llamadas outbound gestionadas por IA conversacional.</div>
+        <div class="addon-note">Llamadas gestionadas por IA conversacional.</div>
       </div>
       <div class="addon-card reveal reveal-delay-1">
         <div class="addon-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
         <div class="addon-name">Agendamiento de citas</div>
-        <div class="addon-price">$299 config. + $19/mes</div>
         <div class="addon-note">Sistema de agendamiento conectado a tu calendario en tiempo real.</div>
       </div>
       <div class="addon-card reveal reveal-delay-2">
         <div class="addon-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/></svg></div>
         <div class="addon-name">Seguimiento de leads</div>
-        <div class="addon-price">$199 config. + $29/mes</div>
         <div class="addon-note">Seguimiento automático de prospectos para maximizar la conversión.</div>
-      </div>
-      <div class="addon-card reveal reveal-delay-3">
-        <div class="addon-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></div>
-        <div class="addon-name">Integración de red social</div>
-        <div class="addon-price">$150 config. + $19/mes</div>
-        <div class="addon-note">Conexión de cada canal social (Instagram, Facebook, TikTok, etc.) a tu sistema de automatización.</div>
       </div>
       <div class="addon-card reveal">
         <div class="addon-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
         <div class="addon-name">CRM — GHL</div>
-        <div class="addon-price">$49 / mes</div>
         <div class="addon-note">CRM profesional incluido si aún no cuentas con uno propio.</div>
       </div>
     </div>
@@ -1151,14 +1126,14 @@
     <div class="section-header">
       <span class="label reveal">Transparencia total</span>
       <h2 class="headline reveal reveal-delay-1">Sin costos ocultos.<br>Sin sorpresas.</h2>
-      <p class="subhead reveal reveal-delay-2">Sabemos lo importante que es la claridad al momento de invertir. Aquí todo está sobre la mesa. <strong>Los precios no incluyen IGV.</strong></p>
+      <p class="subhead reveal reveal-delay-2">Sabemos lo importante que es la claridad al momento de invertir. Aquí todo está sobre la mesa.</p>
     </div>
     <div class="trans-grid">
       <div class="trans-card reveal">
         <div class="trans-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
         <div>
           <div class="trans-title">Suscripción de CRM</div>
-          <div class="trans-desc">Si ya tienes tu propio CRM (GHL, KOMMO u otro), el costo es $0. Si necesitas uno, podemos proveerte acceso por solo $49 al mes.</div>
+          <div class="trans-desc">Si ya tienes tu propio CRM (GHL, KOMMO u otro), no hay costo adicional. Si necesitas uno, podemos proveerte acceso a un CRM profesional.</div>
         </div>
       </div>
       <div class="trans-card reveal reveal-delay-1">
@@ -1246,7 +1221,7 @@
       <div class="payment-card reveal reveal-delay-2">
         <div class="payment-num" style="font-size:0;display:flex;justify-content:center;margin-bottom:8px;"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2D5EA3" stroke-width="1.6" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg></div>
         <div class="payment-title">Comprobantes oficiales</div>
-        <div class="payment-desc">Los pagos de configuración se documentan con Factura, Boleta o Recibo por Honorarios según corresponda.</div>
+        <div class="payment-desc">Los pagos de configuración se documentan con Factura o Boleta según corresponda.</div>
       </div>
       <div class="payment-card reveal reveal-delay-3">
         <div class="payment-num" style="font-size:0;display:flex;justify-content:center;margin-bottom:8px;"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2D5EA3" stroke-width="1.6" stroke-linecap="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
